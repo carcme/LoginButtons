@@ -2,7 +2,7 @@
 
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-LoginButtons-green.svg?style=true)](https://android-arsenal.com/details/1/4194)[ ![Download](https://api.bintray.com/packages/shaishgandhi/maven/login-buttons/images/download.svg) ](https://bintray.com/shaishgandhi/maven/login-buttons/_latestVersion)
 
-A simple library for building beautiful login buttons
+A simple library for building beautiful login buttons... now with Anonymous button
 
 
 ![Screenshot](https://github.com/shaishavgandhi05/LoginButtons/blob/master/screenshots/screenshot.png)
@@ -11,7 +11,7 @@ A simple library for building beautiful login buttons
 
 Add this in your dependencies block
 ```groovy
-compile 'com.shaishavgandhi:login-buttons:0.1.1'
+compile 'carcme:login-buttons:0.1.0'
 ```
 
 ## Basic Usage
@@ -53,6 +53,16 @@ compile 'com.shaishavgandhi:login-buttons:0.1.1'
         android:layout_width="match_parent"
         app:iconSize="30dp"
         android:text="Sign in with LinkedIn"
+        android:layout_height="wrap_content"
+        />
+```
+
+### Anonymous Login Button
+```xml
+<com.shaishavgandhi.loginbuttons.AnonButton
+        android:layout_width="match_parent"
+        app:iconSize="30dp"
+        android:text="Sign in Anonymous"
         android:layout_height="wrap_content"
         />
 ```
