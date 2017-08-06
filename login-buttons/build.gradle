@@ -6,23 +6,23 @@ group = 'com.shaishavgandhi.login-buttons'
 version = '0.1.1'
 
 ext {
-    bintrayRepo = 'maven'
+    bintrayRepo = 'login-buttons'
     bintrayName = 'login-buttons'
 
-    publishedGroupId = 'com.shaishavgandhi'
+    publishedGroupId = 'carcme'
     libraryName = 'login-buttons'
     artifact = 'login-buttons'
 
     libraryDescription = 'UI Library for login buttons'
 
-    siteUrl = 'https://github.com/shaishavgandhi05/LoginButtons'
-    gitUrl = 'https://github.com/shaishavgandhi05/LoginButtons.git'
+    siteUrl = 'https://github.com/carcme/LoginButtons'
+    gitUrl = 'https://github.com/carcme/LoginButtons.git'
 
-    libraryVersion = '0.1.1'
+    libraryVersion = '0.1.0'
 
-    developerId = 'shaishgandhi'
-    developerName = 'Shaishav Gandhi'
-    developerEmail = 'shaishgandhi@gmail.com'
+    developerId = 'carcme'
+    developerName = 'Carc Me'
+    developerEmail = 'carcmedev@gmail.com'
 
     licenseName = 'MIT'
     licenseUrl = 'https://opensource.org/licenses/MIT'
@@ -30,14 +30,13 @@ ext {
 }
 
 
-
 android {
-    compileSdkVersion 24
-    buildToolsVersion "24.0.1"
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 24
+        targetSdkVersion 25
         versionCode 1
         versionName "1.0"
     }
@@ -56,8 +55,9 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:24.1.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
 }
+/*
 
 task generateSourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
@@ -81,6 +81,9 @@ artifacts {
     archives generateJavadocsJar
     archives generateSourcesJar
 }
+*/
 
+
+// Place it at the end of the file
 apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
 apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
