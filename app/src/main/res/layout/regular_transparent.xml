@@ -2,40 +2,36 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="5dp"
+    android:padding="@dimen/activity_vertical_margin"
     android:background="#3C3C3B"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <com.shaishavgandhi.loginbuttons.GooglePlusButton
         android:id="@+id/google"
         app:transparentBackground="true"
-        android:layout_above="@+id/facebook"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/facebook"
         android:textAlignment="center"
         app:roundedCorner="true"
         app:iconCenterAligned="false"
         app:iconSize="30dp"
         android:layout_margin="5dp"
-        android:text="Sign in with Google"
-        android:layout_height="wrap_content"
-        >
-
-    </com.shaishavgandhi.loginbuttons.GooglePlusButton>
+        android:text="@string/sign_in_with_google"
+        />
 
     <com.shaishavgandhi.loginbuttons.FacebookButton
         android:id="@+id/facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_above="@+id/twitter"
         app:roundedCorner="true"
-        android:layout_width="match_parent"
-        android:text="Sign in with Facebook"
+        android:text="@string/sign_in_with_facebook"
         app:iconSize="30dp"
         app:transparentBackground="true"
         app:iconCenterAligned="false"
         android:layout_margin="5dp"
-        android:layout_height="wrap_content"
-        >
-
-    </com.shaishavgandhi.loginbuttons.FacebookButton>
+        />
 
     <com.shaishavgandhi.loginbuttons.TwitterButton
         android:layout_width="match_parent"
@@ -46,16 +42,24 @@
         app:transparentBackground="true"
         app:iconSize="30dp"
         android:layout_margin="5dp"
-        android:text="Sign in with Twitter"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="0dp"
-        android:layout_marginRight="0dp"
-        android:layout_marginBottom="0dp">
-
-    </com.shaishavgandhi.loginbuttons.TwitterButton>
+        android:text="@string/sign_in_with_twitter"
+        android:layout_height="wrap_content"/>
 
     <com.shaishavgandhi.loginbuttons.LinkedInButton
         android:id="@+id/linkedin"
+        app:roundedCorner="true"
+        android:layout_above="@+id/anon"
+        android:layout_width="match_parent"
+        app:iconSize="30dp"
+        app:iconCenterAligned="false"
+        app:transparentBackground="true"
+        android:layout_margin="5dp"
+        android:text="@string/sign_in_with_linkedin"
+        android:layout_height="wrap_content"
+        />
+
+    <com.shaishavgandhi.loginbuttons.AnonButton
+        android:id="@+id/anon"
         app:roundedCorner="true"
         android:layout_width="match_parent"
         app:iconSize="30dp"
@@ -63,12 +67,8 @@
         app:transparentBackground="true"
         android:layout_alignParentBottom="true"
         android:layout_margin="5dp"
-        android:text="Sign in with LinkedIn"
+        android:text="@string/sign_in_anonymous"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="0dp"
-        android:layout_marginRight="0dp"
-        android:layout_marginBottom="0dp">
-
-    </com.shaishavgandhi.loginbuttons.LinkedInButton>
+        />
 
 </RelativeLayout>

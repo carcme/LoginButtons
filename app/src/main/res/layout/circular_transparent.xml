@@ -9,47 +9,40 @@
     >
 
     <com.shaishavgandhi.loginbuttons.GooglePlusButton
-        android:layout_width="75dp"
-        android:layout_weight="1"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
         app:roundedCorner="true"
         android:id="@+id/google"
         app:transparentBackground="true"
         android:layout_margin="5dp"
-        android:textAlignment="center"
         app:iconSize="30dp"
-        app:roundedCornerRadius="75dp"
+        app:roundedCornerRadius="@dimen/button_size"
         android:layout_alignParentBottom="true"
-        android:layout_height="75dp"
-        >
-
-    </com.shaishavgandhi.loginbuttons.GooglePlusButton>
+        />
 
     <com.shaishavgandhi.loginbuttons.FacebookButton
-        android:layout_width="75dp"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
         android:layout_margin="5dp"
         android:id="@+id/facebook"
-        android:layout_weight="1"
         app:roundedCorner="true"
         app:transparentBackground="true"
         app:iconSize="30dp"
-        app:roundedCornerRadius="75dp"
+        app:roundedCornerRadius="@dimen/button_size"
         android:layout_alignParentBottom="true"
         android:layout_toEndOf="@+id/google"
         android:layout_toRightOf="@+id/google"
-        android:layout_height="75dp"
-        >
-
-    </com.shaishavgandhi.loginbuttons.FacebookButton>
+        />
 
     <com.shaishavgandhi.loginbuttons.TwitterButton
         android:id="@+id/twitter"
-        android:layout_width="75dp"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
         app:roundedCorner="true"
         android:layout_margin="5dp"
         app:iconSize="30dp"
-        app:roundedCornerRadius="75dp"
+        app:roundedCornerRadius="@dimen/button_size"
         android:layout_alignParentBottom="true"
-        android:layout_height="75dp"
         app:transparentBackground="true"
         android:layout_toEndOf="@+id/facebook"
         android:layout_toRightOf="@+id/facebook"
@@ -57,15 +50,28 @@
 
     <com.shaishavgandhi.loginbuttons.LinkedInButton
         android:id="@+id/linkedin"
-        android:layout_width="75dp"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
         app:roundedCorner="true"
         app:transparentBackground="true"
         android:layout_margin="5dp"
-        app:roundedCornerRadius="75dp"
+        app:roundedCornerRadius="@dimen/button_size"
         app:iconSize="30dp"
         android:layout_alignParentBottom="true"
-        android:layout_height="75dp"
         android:layout_toEndOf="@+id/twitter"
         android:layout_toRightOf="@+id/twitter"/>
+
+    <com.shaishavgandhi.loginbuttons.AnonButton
+        android:id="@+id/anon"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        app:roundedCorner="true"
+        app:transparentBackground="true"
+        android:layout_margin="5dp"
+        app:roundedCornerRadius="@dimen/button_size"
+        app:iconSize="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/linkedin"
+        android:layout_toRightOf="@+id/linkedin"/>
 
 </RelativeLayout>
