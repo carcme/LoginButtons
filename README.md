@@ -1,17 +1,29 @@
 # LoginButtons
+[ ![Download](https://api.bintray.com/packages/shaishgandhi/maven/login-buttons/images/download.svg) ](https://bintray.com/shaishgandhi/maven/login-buttons/_latestVersion)
 
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-LoginButtons-green.svg?style=true)](https://android-arsenal.com/details/1/4194)[ ![Download](https://api.bintray.com/packages/shaishgandhi/maven/login-buttons/images/download.svg) ](https://bintray.com/shaishgandhi/maven/login-buttons/_latestVersion)
+A simple library for building beautiful login buttons... 
 
-A simple library for building beautiful login buttons... now with Anonymous button
+## ...now with Anonymous and Custom buttons
 
 
 ![Screenshot](https://github.com/shaishavgandhi05/LoginButtons/blob/master/screenshots/screenshot.png)
 
 ## Gradle
 
-Add this in your dependencies block
+
+Add this in your project gradle
 ```groovy
-compile 'carcme:login-buttons:0.1.0'
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://dl.bintray.com/carcme/login-buttons' }
+    }
+}
+```
+
+and add this in your dependencies block of the app gradle
+```groovy
+compile 'carcme:login-buttons:0.3.0'
 ```
 
 ## Basic Usage
@@ -20,10 +32,10 @@ compile 'carcme:login-buttons:0.1.0'
 ```xml
 <com.shaishavgandhi.loginbuttons.GooglePlusButton
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:textAlignment="center"
         app:iconSize="30dp"
         android:text="Sign in with Google"
-        android:layout_height="wrap_content"
         />
 ```
 
@@ -31,9 +43,9 @@ compile 'carcme:login-buttons:0.1.0'
 ```xml
 <com.shaishavgandhi.loginbuttons.FacebookButton
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="Sign in with Facebook"
         app:iconSize="30dp"
-        android:layout_height="wrap_content"
         />
 ```
 
@@ -41,9 +53,9 @@ compile 'carcme:login-buttons:0.1.0'
 ```xml
 <com.shaishavgandhi.loginbuttons.TwitterButton
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:iconSize="30dp"
         android:text="Sign in with Twitter"
-        android:layout_height="wrap_content"
         />
 ```
 
@@ -51,9 +63,9 @@ compile 'carcme:login-buttons:0.1.0'
 ```xml
 <com.shaishavgandhi.loginbuttons.LinkedInButton
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:iconSize="30dp"
         android:text="Sign in with LinkedIn"
-        android:layout_height="wrap_content"
         />
 ```
 
@@ -61,9 +73,21 @@ compile 'carcme:login-buttons:0.1.0'
 ```xml
 <com.shaishavgandhi.loginbuttons.AnonButton
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:iconSize="30dp"
         android:text="Sign in Anonymous"
+        />
+```
+
+### Custom Button
+```xml
+<com.shaishavgandhi.loginbuttons.AnonButton
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:iconSize="30dp"
+        android:text="Some Button Text"
+        app:buttonColor="@color/google"
+        app:buttonIcon="@drawable/twitter_logo"
         />
 ```
 
