@@ -8,4 +8,8 @@
     <string name="sign_in_with_twitter">Sign in with Twitter</string>
     <string name="sign_in_with_linkedin">Sign in with LinkedIn</string>
     <string name="sign_in_anonymous">Sign in Anonymous</string>
+    <string name="no_icon_standard">No Icon</string>
+    <string name="transparent_standard">Transparent</string>
+    <string name="button_standard">Button</string>
+    <string name="rounded_standard">Rounded</string>
 </resources>

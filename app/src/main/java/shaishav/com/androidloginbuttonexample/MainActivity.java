@@ -134,6 +134,9 @@ public class MainActivity extends AppCompatActivity {
                 case 7:
                     rootView = inflater.inflate(R.layout.circular_transparent, container, false);
                     break;
+                case 8:
+                    rootView = inflater.inflate(R.layout.custom_buttons, container, false);
+                    break;
             }
 
             return rootView;
@@ -161,7 +164,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public int getCount() {
             // Show 7 total pages.
-            return 7;
+            return 8;
         }
 
         @Override
@@ -181,6 +184,8 @@ public class MainActivity extends AppCompatActivity {
                     return "Circular";
                 case 6:
                     return "Circular Transparent";
+                case 7:
+                    return "Custom Buttons";
             }
             return null;
         }

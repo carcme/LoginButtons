@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3C3C3B"
+    android:gravity="center_horizontal"
+    android:paddingBottom="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <com.shaishavgandhi.loginbuttons.CustomButton
+            android:id="@+id/customSquareBtn"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"
+            android:textAlignment="center"
+            app:buttonColor="@color/anonymous"
+            app:buttonIcon="@drawable/twitter_logo"
+            app:iconSize="30dp" />
+
+        <com.shaishavgandhi.loginbuttons.CustomButton
+            android:id="@+id/customTransparentSquareBtn"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="4dp"
+            android:layout_toEndOf="@+id/customSquareBtn"
+            android:layout_toRightOf="@+id/customSquareBtn"
+            app:buttonColor="@color/anonymous"
+            app:buttonIcon="@drawable/linkedin_logo"
+            app:iconSize="30dp"
+            app:roundedCornerRadius="@dimen/button_size"
+            app:transparentBackground="true" />
+
+
+        <com.shaishavgandhi.loginbuttons.CustomButton
+            android:id="@+id/customCircleBtn"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"
+            android:layout_toEndOf="@+id/customTransparentSquareBtn"
+            android:layout_toRightOf="@+id/customTransparentSquareBtn"
+            android:textAlignment="center"
+            app:buttonColor="@color/twitter"
+            app:buttonIcon="@drawable/google_logo"
+            app:iconSize="30dp"
+            app:roundedCorner="true" />
+
+
+        <com.shaishavgandhi.loginbuttons.CustomButton
+            android:id="@+id/customCircleTransparent"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"
+            android:layout_toEndOf="@+id/customCircleBtn"
+            android:layout_toRightOf="@+id/customCircleBtn"
+            app:buttonColor="@color/google"
+            app:buttonIcon="@drawable/google_logo"
+            app:iconSize="30dp"
+            app:roundedCorner="true"
+            app:roundedCornerRadius="@dimen/button_size"
+            app:transparentBackground="true" />
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        >
+
+        <com.shaishavgandhi.loginbuttons.CustomButton
+            android:id="@+id/customBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_standard"
+            app:buttonColor="@color/google"
+            app:buttonIcon="@drawable/ic_user"
+            app:iconSize="30dp" />
+
+        <com.shaishavgandhi.loginbuttons.CustomButton
+            android:id="@+id/roundedBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/rounded_standard"
+            app:buttonColor="@color/twitter"
+            app:iconCenterAligned="false"
+            app:buttonIcon="@drawable/twitter_logo"
+            app:iconSize="40dp"
+            app:roundedCorner="true" />
+
+        <com.shaishavgandhi.loginbuttons.CustomButton
+            android:id="@+id/transparentBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/transparent_standard"
+            app:buttonColor="@color/anonymous"
+            app:iconCenterAligned="false"
+            app:buttonIcon="@drawable/ic_user"
+            app:iconSize="30dp"
+            app:roundedCorner="true"
+            app:transparentBackground="true" />
+
+        <com.shaishavgandhi.loginbuttons.CustomButton
+            android:id="@+id/noIconBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/no_icon_standard"
+            app:buttonColor="@android:color/white"
+            app:iconCenterAligned="false"
+            app:transparentBackground="true" />
+
+        
+    </LinearLayout>
+</RelativeLayout>
