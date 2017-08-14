@@ -1,5 +1,5 @@
 # LoginButtons
-[ ![Download](https://api.bintray.com/packages/shaishgandhi/maven/login-buttons/images/download.svg) ](https://bintray.com/shaishgandhi/maven/login-buttons/_latestVersion)
+[ ![Download](https://api.bintray.com/packages/carcme/login-buttons/login-buttons/images/download.svg) ](https://bintray.com/carcme/login-buttons/login-buttons/0.3.0)
 
 A simple library for building beautiful login buttons... 
 
