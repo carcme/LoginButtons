@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="IconButton">
+        <attr name="buttonIcon" format="integer" />
+        <attr name="buttonColor" format="reference" />
         <attr name="iconSize" format="dimension" />
         <attr name="iconPadding" format="dimension" />
         <attr name="iconCenterAligned" format="boolean"/>

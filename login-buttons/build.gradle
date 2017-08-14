@@ -18,7 +18,7 @@ ext {
     siteUrl = 'https://github.com/carcme/LoginButtons'
     gitUrl = 'https://github.com/carcme/LoginButtons.git'
 
-    libraryVersion = '0.1.0'
+    libraryVersion = '0.3.0'
 
     developerId = 'carcme'
     developerName = 'Carc Me'
